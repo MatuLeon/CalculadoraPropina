@@ -1,0 +1,92 @@
+/* <style>
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+</style> */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+/* font-family: 'Space Mono', monospace; */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+}
+
+body{
+    background-color: hsl(185, 41%, 84%);
+}
+
+.title{
+    margin: 40px 0 10px 0;
+    font-size:24px ;
+    color:hsl(186, 14%, 43%) ;
+    text-align: center;
+    letter-spacing: 3px;
+    overflow-wrap:break-word ;
+}
+
+
+
+
+.contenedorCalculadora{
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorCuenta{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    color:hsl(184, 14%, 56%) ;
+}
+
+.cuenta__Pago{
+    background-color: hsl(185, 41%, 84%);
+    border-radius: 6px;
+    color: hsl(183, 100%, 15%);
+    padding: 5px 20px;
+    width: 80vw;
+    display: flex;
+    justify-content:space-between ;
+}
+
+.cuenta__Pago>p{
+    font-size: 18px;
+}
+
+
+
+.cuenta__Pago>img{
+    height: fit-content;
+    padding-top: 5px;
+}
+
+
+
+.contenedorPorcentaje{
+    border: solid red 2px;
+    margin-top: 30px;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 10px;
+    padding: 30px;
+}
+
+.contenedorPorcentaje>*{
+    border: solid pink 3px;
+    width: 5rem;
+    height: 3rem;
+    padding: 20px;
+    /* border-radius: 10px;
+    border: none; */
+}
+
