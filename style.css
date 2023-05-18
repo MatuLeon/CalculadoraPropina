@@ -40,7 +40,7 @@ body{
     align-items: center;
 }
 
-.contenedorCuenta{
+.contenedorCuenta, .contenedorPersonas{
     margin-top: 20px;
     display: flex;
     flex-direction: column;
@@ -48,7 +48,7 @@ body{
     color:hsl(184, 14%, 56%) ;
 }
 
-.cuenta__Pago{
+.cuenta__Pago, .numeroPersonas{
     background-color: hsl(185, 41%, 84%);
     border-radius: 6px;
     color: hsl(183, 100%, 15%);
@@ -56,37 +56,106 @@ body{
     width: 80vw;
     display: flex;
     justify-content:space-between ;
-}
-
-.cuenta__Pago>p{
-    font-size: 18px;
+    margin-bottom: 20px;
 }
 
 
-
-.cuenta__Pago>img{
+img{
     height: fit-content;
     padding-top: 5px;
 }
 
+.tituloPropina{
+    color:hsl(184, 14%, 56%);
+    margin-bottom: 10px;
+    max-width: 50vw;
+    width :50vw;
+    align-self: flex-start;
+}
 
 
-.contenedorPorcentaje{
-    border: solid red 2px;
-    margin-top: 30px;
-    width: 80vw;
+.contenedorGrid{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr ;
     grid-row-gap: 10px;
-    padding: 30px;
+    grid-column-gap: 5px;
 }
 
-.contenedorPorcentaje>*{
-    border: solid pink 3px;
-    width: 5rem;
+.contenedorGrid>*{
+    max-width: 40vw;
+    width:40vw;
     height: 3rem;
-    padding: 20px;
-    /* border-radius: 10px;
-    border: none; */
+    border: none;
+    border-radius:10px;
+    font-size: 20px;
+    color: white;
+    background-color: hsl(183, 100%, 15%);
 }
 
+.personalizar{
+    color: hsl(189, 41%, 97%);
+    background-color: hsl(189, 41%, 97%);
+    text-align: center;
+}
+
+.inputs{
+    width: 30px;
+    text-align: right;
+    border: none;
+    background-color: transparent;
+    color: hsl(183, 100%, 15%);
+    outline: none;
+    font-size: 18px;
+}
+
+.contenedorResultados{
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(172, 67%, 45%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 80vw;
+    width: 80vw;
+}
+
+.resultados{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h4{
+    color: white;
+    font-size: 18px;
+}
+
+
+.pagos{
+    font-size: 24px;
+}
+
+
+.reiniciar{
+    border: none;
+    background-color:hsl(172, 67%, 45%);
+    color:hsl(183, 100%, 15%) ;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 10px 0;
+    width: 70vw;
+    align-self: center;
+    margin-bottom: 20px;
+}
+
+.attribution{
+    display: flex;
+    flex-direction: column;
+}
+
+
+a{
+    text-decoration: none;
+}

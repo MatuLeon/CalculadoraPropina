@@ -21,6 +21,7 @@
 
     <section class="contenedorCalculadora">
           
+      <!------------------- CUENTA A PAGAR ------------->
           <div class="contenedorCuenta">
             
             <p>
@@ -29,21 +30,25 @@
             
             <div class="cuenta__Pago">
               <img src="./images/icon-dollar.svg" alt="">
-              <p>0</p>
+              <input type="text" id="cuenta" placeholder="0" class="inputs">
             </div>
             
           </div>
           
-          <div class="tituloPropina">
-            <p> 
-              Propina %
-            </p>
-          </div>
 
 
-          
+
+          <!------------------- PROPINA A DEJAR -------------->
           <div class="contenedorPorcentaje">
-            
+
+            <div class="tituloPropina">
+              <p> 
+                Propina %
+              </p>
+            </div>
+
+            <div class="contenedorGrid">
+
               <button class="cinco">
                 5%
               </button>
@@ -64,31 +69,48 @@
                 50%
               </button>
 
-              <input class="personalizar" placeholder="Pers.">
+              <input class="personalizar" id="personalizar" placeholder="Auto">
               </input>
+
+
+            </div>
+            
+
           
           </div>
         
-        
-        Número de personas
-        <div>
-          <img src="./images/icon-person.svg" alt="">
-          <p>0</p>
+          <!--------------- NUMERO DE COMENSALES ------------->
+        <div class="contenedorPersonas">
+
+          <p>
+            Número de personas
+          </p>
+          
+          <div class="numeroPersonas">
+            <img src="./images/icon-person.svg" alt="">
+            <input type="text" id="numeroPersonas" placeholder="0" class="inputs">
+          </div>
+          
         </div>
         
-        <div>
+
+
+        <!---------- RESULTADOS DE CUENTAS Y PROPINA ------------>
+        <div class="contenedorResultados">
           
-          <div>
+          <div class="resultados">
+
             <div>
-              <h4>Importe de la propina</h4>
+              <h4>Propina</h4>
               <p>/ personas</p>
             </div>
             <div>
-              <p>$0.00</p>
+              <p class="pagos">$0.00</p>
             </div>
+
           </div>
           
-          <div>
+          <div class="resultados">
             
             <div>
               <h4>Total</h4>
@@ -96,12 +118,12 @@
             </div>
             
             <div>
-              <p>$0.00</p>
+              <p class="pagos">$0.00</p>
             </div>
             
           </div>
 
-          <button>REINICIAR</button>
+          <button class="reiniciar">REINICIAR</button>
           
         </div>
 
@@ -113,8 +135,17 @@
 
     
     <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      <div>
+        <p>
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        </p> 
+      </div>
+      <div>
+        <p>
+          Coded by <a href="https://www.linkedin.com/in/matias-nicolas-leon-5a4a0221a/">Matias Leon</a>.
+
+        </p>
+      </div>
     </div>
   
   </footer>
