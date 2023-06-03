@@ -7,155 +7,156 @@
 
 /* font-family: 'Space Mono', monospace; */
 
+:root{
+    --main-bg-color: hsl(185, 41%, 84%);
+    --hover--and--btn-color:hsl(172, 67%, 45%);
+    --primary--color:hsl(183, 100%, 15%);
+    --subTitle--color:hsl(186, 14%, 43%);
+    --inputs--bg-color:hsl(189, 41%, 97%);
+}
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Space Mono', monospace;
     font-weight: 700;
+    
 }
 
 body{
-    background-color: hsl(185, 41%, 84%);
+    background-color: var(--main-bg-color);
 }
 
-.title{
-    margin: 40px 0 10px 0;
-    font-size:24px ;
-    color:hsl(186, 14%, 43%) ;
+main{
     text-align: center;
-    letter-spacing: 3px;
-    overflow-wrap:break-word ;
-}
-
-
-
-
-.contenedorCalculadora{
-    background-color: white;
-    border-radius: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.contenedorCuenta, .contenedorPersonas{
-    margin-top: 20px;
+h1{
+    color: hsl(184, 14%, 56%);
+    margin: 20px 0;
+}
+
+.contenedorCalculadora{
+    border-radius: 20px;
+    width: 320px;
     display: flex;
     flex-direction: column;
-    width: 80vw;
-    color:hsl(184, 14%, 56%) ;
+    padding: 20px 30px;
+    background-color: white;
 }
 
-.cuenta__Pago, .numeroPersonas{
-    background-color: hsl(185, 41%, 84%);
-    border-radius: 6px;
-    color: hsl(183, 100%, 15%);
-    padding: 5px 20px;
-    width: 80vw;
+.contenedorCuenta,
+.contenedorPersonas{
     display: flex;
-    justify-content:space-between ;
-    margin-bottom: 20px;
+    flex-direction: column;
 }
 
-
-img{
-    height: fit-content;
-    padding-top: 5px;
-}
-
-.tituloPropina{
-    color:hsl(184, 14%, 56%);
-    margin-bottom: 10px;
-    max-width: 50vw;
-    width :50vw;
-    align-self: flex-start;
-}
-
-
-.contenedorGrid{
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 1fr 1fr ;
-    grid-row-gap: 10px;
-    grid-column-gap: 5px;
-}
-
-.contenedorGrid>*{
-    max-width: 40vw;
-    width:40vw;
-    height: 3rem;
-    border: none;
-    border-radius:10px;
-    font-size: 20px;
-    color: white;
-    background-color: hsl(183, 100%, 15%);
-}
-
-.personalizar{
-    color: hsl(189, 41%, 97%);
-    background-color: hsl(189, 41%, 97%);
-    text-align: center;
+label{
+    text-align: start;
+    color: var(--subTitle--color);
+    margin-bottom: 7px;
 }
 
 .inputs{
-    width: 30px;
-    text-align: right;
     border: none;
-    background-color: transparent;
-    color: hsl(183, 100%, 15%);
-    outline: none;
-    font-size: 18px;
-}
-
-.contenedorResultados{
-    background-color: hsl(183, 100%, 15%);
-    color: hsl(172, 67%, 45%);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 80vw;
-    width: 80vw;
-}
-
-.resultados{
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-h4{
-    color: white;
-    font-size: 18px;
-}
-
-
-.pagos{
-    font-size: 24px;
-}
-
-
-.reiniciar{
-    border: none;
-    background-color:hsl(172, 67%, 45%);
-    color:hsl(183, 100%, 15%) ;
+    text-align: end;
+    background-color: var(--inputs--bg-color);
+    height: 30px;
+    padding: 10px;
+    border-radius: 5px;
     font-size: 16px;
-    border-radius: 10px;
-    padding: 10px 0;
-    width: 70vw;
-    align-self: center;
+    color: var(--primary--color);
     margin-bottom: 20px;
 }
 
-.attribution{
-    display: flex;
-    flex-direction: column;
+#cuenta{
+    background-image: url(./images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position: 5%;
+}
+
+#comensales{
+    background-image: url(./images/icon-person.svg);
+    background-repeat: no-repeat;
+    background-position: 5%;
 }
 
 
-a{
-    text-decoration: none;
+
+.tituloPropina{
+    text-align: start;
+    color: var(--subTitle--color);
+    margin-bottom: 5px;
+}
+
+.contenedorGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    padding: 10px 0px;
+}
+
+.btn-Propina{
+    width: 7rem;
+    border: none;
+    background-color: var(--primary--color);
+    color: white;
+    height: 2rem;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.btn-Personalizar{
+    width: 7rem;
+    border-radius: 5px;
+    text-align: right;
+    border: none;
+    font-size: 16px;
+}
+
+
+.contenedorResultados{
+    background-color: var(--primary--color);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+
+.resultados{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.resultados>div>p{
+    font-size: 12px;
+    color: var(--subTitle--color);
+}
+
+.pagos{
+    font-size: 26px;
+    color: var(--hover--and--btn-color);
+}
+
+
+.btn-reiniciar{
+    width: 200px;
+    text-align: center;
+    align-self: center;
+    border-radius: 6px;
+    padding: 8px;
+    background-color: var(--hover--and--btn-color);
+    border: none;
+    color: var(--primary--color);
+    margin-bottom: 30px;
 }

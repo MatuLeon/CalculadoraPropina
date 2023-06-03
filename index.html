@@ -15,24 +15,16 @@
 
   <main>
 
-    <p class="title">
+    <h1 class="title">
       DIVISOR
-    </p>
+    </h1>
 
     <section class="contenedorCalculadora">
           
       <!------------------- CUENTA A PAGAR ------------->
           <div class="contenedorCuenta">
-            
-            <p>
-              Cuenta
-            </p>
-            
-            <div class="cuenta__Pago">
-              <img src="./images/icon-dollar.svg" alt="">
+              <label for="cuenta">Cuenta</label>
               <input type="text" id="cuenta" placeholder="0" class="inputs">
-            </div>
-            
           </div>
           
 
@@ -40,56 +32,44 @@
 
           <!------------------- PROPINA A DEJAR -------------->
           <div class="contenedorPorcentaje">
-
             <div class="tituloPropina">
-              <p> 
+              <h4> 
                 Propina %
-              </p>
+              </h4>
             </div>
 
             <div class="contenedorGrid">
-
-              <button class="cinco">
+              <button class="btn-Propina">
                 5%
               </button>
 
-              <button class="diez">
+              <button class="btn-Propina">
                 10%
               </button>
 
-              <button class="quince">
+              <button class="btn-Propina">
                 15%
               </button>
 
-              <button class="veinticinco">
+              <button class="btn-Propina">
                 25%
               </button>
 
-              <button class="cincuenta">
+              <button class="btn-Propina">
                 50%
               </button>
 
-              <input class="personalizar" id="personalizar" placeholder="Auto">
+              <input class="btn-Personalizar" id="personalizar" placeholder="Auto">
               </input>
 
-
             </div>
-            
-
-          
           </div>
-        
+
           <!--------------- NUMERO DE COMENSALES ------------->
         <div class="contenedorPersonas">
-
-          <p>
-            Número de personas
-          </p>
           
-          <div class="numeroPersonas">
-            <img src="./images/icon-person.svg" alt="">
-            <input type="text" id="numeroPersonas" placeholder="0" class="inputs">
-          </div>
+            <label for="comensales">Número de personas</label>
+            <input type="text" id="comensales" placeholder="0" class="inputs">
           
         </div>
         
@@ -104,10 +84,7 @@
               <h4>Propina</h4>
               <p>/ personas</p>
             </div>
-            <div>
               <p class="pagos">$0.00</p>
-            </div>
-
           </div>
           
           <div class="resultados">
@@ -116,14 +93,11 @@
               <h4>Total</h4>
               <p>/ personas</p>
             </div>
-            
-            <div>
               <p class="pagos">$0.00</p>
-            </div>
             
           </div>
 
-          <button class="reiniciar">REINICIAR</button>
+          <button class="btn-reiniciar">REINICIAR</button>
           
         </div>
 
