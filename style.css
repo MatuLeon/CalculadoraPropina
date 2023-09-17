@@ -80,6 +80,8 @@ label{
     background-position: 5%;
 }
 
+
+
 #comensales{
     background-image: url(./images/icon-person.svg);
     background-repeat: no-repeat;
@@ -112,6 +114,15 @@ label{
     border-radius: 5px;
 }
 
+.btn-Propina:hover{
+    cursor: pointer;
+}
+
+.btn-Propina_select{
+    background-color: hsl(172deg, 67%, 45%);
+    color: hsl(183deg, 100%, 15%);
+}
+
 .btn-Personalizar{
     width: 7rem;
     border-radius: 5px;
@@ -119,6 +130,8 @@ label{
     border: none;
     font-size: 16px;
 }
+
+
 
 
 .contenedorResultados{
