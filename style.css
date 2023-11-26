@@ -121,6 +121,7 @@ label{
 .btn-Propina_select{
     background-color: hsl(172deg, 67%, 45%);
     color: hsl(183deg, 100%, 15%);
+    transition: all  0.8s;
 }
 
 .btn-Personalizar{
@@ -131,6 +132,12 @@ label{
     font-size: 16px;
 }
 
+.messageError{
+    color: red;
+    font-size: 16px;
+    text-align: end;
+    display: block;
+}
 
 
 

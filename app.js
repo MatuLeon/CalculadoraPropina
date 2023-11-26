@@ -29,13 +29,19 @@ function validaCuenta() {
 function click_Btn() {
     botonPropina.forEach(btn => {
         btn.addEventListener('click', porcentajePropina => {
+            changeColor()
             propina = Number(porcentajePropina.target.innerText.slice(0, -1))
-            btn.classList.add = 'btn-Propina_select'
+            btn.classList.add('btn-Propina_select')
             totalCuenta()
         })
     })
 }
 
+function changeColor(){
+    botonPropina.forEach(btn =>{
+        btn.classList.remove('btn-Propina_select')
+    })
+}
 
 
 function numComensales() {
@@ -54,8 +60,12 @@ function personalizar_Propina() {
     personalizarPropina.addEventListener('input', () => {
         let validation = /^[0-9,$]*$/
         if(!validation.test(personalizarPropina.value)){
+            document.getElementById('messageError').className = 'messageError'
+            document.getElementById('messageError').textContent = 'Número no valido'
             
         }else{
+            document.getElementById('messageError').className = 'messageErrorDisabled';
+            document.getElementById('messageError').textContent = ''
             propina = parseFloat(personalizarPropina.value)
             totalCuenta()
         }
